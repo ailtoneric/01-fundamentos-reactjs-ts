@@ -1,0 +1,83 @@
+.comment {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.commentBox {
+    flex: 1;
+
+    footer {
+        margin-top: 1rem;
+
+        button {
+            background: transparent;
+            border: 0;
+            border-radius: 2px;
+            color: var(--gray5);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                color: var(--green-light);
+            }
+
+            svg {
+                margin-right: 0.5rem;
+            }
+
+            span::before {
+                padding: 0 0.25rem;
+                content: "\2022";
+            }
+        }
+    }
+}
+
+.commentContent {
+    background: var(--gray3);
+    padding: 1rem;
+    border-radius: 8px;
+
+    header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+        button {
+            background: transparent;
+            border: 0;
+            border-radius: 2px;
+            color: var(--gray5);
+            cursor: pointer;
+            line-height: 0;
+
+            &:hover {
+                color: var(--red-danger);
+            }
+        }
+    }
+
+    p {
+        margin-top: 1rem;
+        color: var(--gray6);
+    }
+}
+
+.authorAndTime {
+    strong {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
+    
+    time {
+        display: block;
+        font-size: 0.75rem;
+        line-height: 1.6; 
+        color: var(--gray5);
+    }
+
+
+}

@@ -1,0 +1,123 @@
+.post {
+    background: var(--gray2);
+    border-radius: 8px;
+    padding: 2.5rem;
+
+    & + .post {
+        margin-top: 2rem;
+    }
+
+    > header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        time {
+            font-size: 0.875rem;
+            color: var(--gray5);
+        }
+    }
+}
+
+.content {
+    line-height: 1.6;
+    color: var(--gray6);
+    margin-top: 1.5rem;
+
+    p {
+        margin-top: 1rem;
+    }
+
+    a {
+        font-weight: bold;
+        color: var(--green);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--green-light);
+        }
+    }
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.authorInfo {
+    strong {
+        display: block;
+        color: var(--gray7);
+        line-height: 1.6;
+    }
+
+    span {
+        display: block;
+        line-height: 1.6;
+        font-size: 0.875rem;
+        color: var(--gray5);
+    }
+}
+
+.commentForm {
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gray3);
+
+    > strong {
+        line-height: 1.6;
+        color: var(--gray7);
+    }
+
+    textarea {
+        width: 100%;
+        background: var(--gray1);
+        border: 0;
+        resize: none;
+        height: 6rem;
+        padding: 1rem;
+        border-radius: 8px;
+        color: var(--gray6);
+        line-height: 1.4;
+        margin-top: 1rem;
+    }
+    
+    footer {
+        visibility: hidden;
+        max-height: 0;
+    }
+
+    &:focus-within footer {
+        visibility: visible;
+        max-height: none;
+    }
+
+    button {
+        margin-top: 1rem;
+        padding: 1rem 1.5rem;
+        border: 0;
+        border-radius: 8px;
+        background: var(--green);
+        color: var(--white);
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:not(:disabled):hover {
+            background: var(--green-light);
+        }
+
+        &:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+    }
+}
+
+.commentList {
+    margin-top: 2rem;
+}

@@ -38,11 +38,15 @@ Siga as etapas abaixo para simular o projeto em seu ambiente local.
 
 ### Instalação
 
-1. Clone the repo
+1. Clonar o repositório do github
    ```sh
    git clone https://github.com/ailtoneric/01-fundamentos-reactjs-ts.git
    ```
-2. Install NPM packages
+2. Instalar os pacotes da NPM
    ```sh
    npm install
+   ```
+3. Execute o servidor local
+   ```sh
+   npm run dev
    ```
